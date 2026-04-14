@@ -68,6 +68,10 @@ Type: PDF, File: summary_report.pdf, Author: Acme Corp, Pages: 30
 ### Key Observation
 Notice that **"Creating a ... prototype"** only prints **3 times** — once per document type — even though **4 documents** are created. This is because only the **prototypes** call the constructor. The clones do not, making the pattern efficient.
 
+## UML Diagram
+<img width="912" height="462" alt="image" src="https://github.com/user-attachments/assets/77b1aeb4-fb8f-4980-9e28-387ee419f3f9" />
+
+
 ## Author
 Angela Militar
 Lab 7 — Prototype Design Pattern
