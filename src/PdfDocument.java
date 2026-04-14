@@ -9,16 +9,13 @@ public class PdfDocument implements Document {
         this.author = author;
         this.pageCount = pageCount;
         this.name = name;
-        System.out.println("Creating a PDF Document prototype. //Executed in the constructor");
+        System.out.println("Creating a PDF Document prototype.");
     }
 
     @Override
     public Document clone() {
-        try {
-            return (PdfDocument) super.clone();
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
+        try { return (PdfDocument) super.clone(); }
+        catch (CloneNotSupportedException e) { return null; }
     }
 
     @Override

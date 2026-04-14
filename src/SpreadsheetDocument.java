@@ -7,16 +7,13 @@ public class SpreadsheetDocument implements Document {
         this.spreadsheetName = spreadsheetName;
         this.rowCount = rowCount;
         this.columnCount = columnCount;
-        System.out.println("Creating a Spreadsheet Document prototype. ///Executed in the constructor");
+        System.out.println("Creating a Spreadsheet Document prototype.");
     }
 
     @Override
     public Document clone() {
-        try {
-            return (SpreadsheetDocument) super.clone();
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
+        try { return (SpreadsheetDocument) super.clone(); }
+        catch (CloneNotSupportedException e) { return null; }
     }
 
     @Override
@@ -28,7 +25,7 @@ public class SpreadsheetDocument implements Document {
     @Override
     public String getType() { return "Spreadsheet"; }
 
-    public void setSpreadsheetName(String spreadsheetName) { this.spreadsheetName = spreadsheetName; }
+    public void setSpreadsheetName(String name) { this.spreadsheetName = name; }
     public void setRowCount(int rowCount) { this.rowCount = rowCount; }
     public void setColumnCount(int columnCount) { this.columnCount = columnCount; }
 }

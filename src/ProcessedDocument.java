@@ -2,16 +2,16 @@ public class ProcessedDocument {
     public static void main(String[] args) {
         DocumentRegistry registry = new DocumentRegistry();
 
-        PdfDocument pdf1 = registry.createPdf("annual_report_2024.pdf", "Acme Corp", 150, "Annual Report");
+        PdfDocument pdf1 = registry.createSheep("annual_report_2024.pdf", "Acme Corp", 150, "Annual Report");
         pdf1.open();
 
-        TextDocument text1 = registry.createTextDocument("meeting_notes.txt", "UTF-8", 250);
+        TextDocument text1 = registry.createCow(0, "meeting_notes.txt", "UTF-8", 250);
         text1.open();
 
-        SpreadsheetDocument sheet1 = registry.createSpreadsheet("sales_data_q1.xlsx", 1000, 20);
+        SpreadsheetDocument sheet1 = registry.createHorse("sales_data_q1.xlsx", 1000, 20);
         sheet1.open();
 
-        PdfDocument pdf2 = registry.createPdf("summary_report.pdf", "Acme Corp", 30, "Summary Report");
+        PdfDocument pdf2 = registry.createSheep("summary_report.pdf", "Acme Corp", 30, "Summary Report");
         pdf2.open();
     }
 }
